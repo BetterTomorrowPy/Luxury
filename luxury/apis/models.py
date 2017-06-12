@@ -13,3 +13,6 @@ class Animal(models.Model):
 
     def speak(self):
         return self.sound
+
+    class Meta:
+        db_table = 'animal'

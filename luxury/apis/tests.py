@@ -3,8 +3,16 @@
     test.
 """
 from django.test import TestCase
+from django.db import models
 
-from .models import Animal
+
+class Animal(models.Model):
+    """"""
+    name = models.CharField('名字', max_length=64)
+    sound = models.CharField(max_length=64, blank=True, default='')
+
+    def speak(self):
+        return self.sound
 
 
 class AnimalTestCase(TestCase):
