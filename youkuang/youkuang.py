@@ -21,6 +21,7 @@ refresh_rate = 30
 # StockScreener(Factor.PE.)
 universe = set_universe('SH50')
 
+
 # 初始化回归账户
 def initialize(account):
     pass
